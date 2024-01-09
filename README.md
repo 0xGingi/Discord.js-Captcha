@@ -1,10 +1,10 @@
 <h1 align="center">
-    🎓 Discord.js Captcha 🎓
+    🎓 Discord.js Captcha 🎓 - Fork to add ephemeral messages
 </h1>
 
 <center style="margin-bottom:1rem;">A powerful package for Discord.js v14 that allows you to easily create CAPTCHAs for Discord Servers.</center>
 
-[![NPM](https://nodei.co/npm/discord.js-captcha.png)](https://npmjs.com/package/discord.js-captcha)
+[![NPM](https://nodei.co/npm/discord.js-captcha.png)](https://npmjs.com/package/discord.js-captcha-ephemeral)
 
 [![Downloads](https://img.shields.io/npm/dt/discord.js-captcha?logo=npm&style=flat-square)](https://npmjs.com/package/discord.js-captcha) [![Discord Server](https://img.shields.io/discord/667479986214666272?logo=discord&logoColor=white&style=flat-square)](https://diamonddigital.dev/discord)
 

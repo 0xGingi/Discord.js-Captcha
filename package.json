@@ -1,7 +1,7 @@
 {
-  "name": "discord.js-captcha",
+  "name": "discord.js-captcha-ephemeral",
   "version": "3.0.8",
-  "description": "A powerful package for Discord.js v14 that allows you to easily create CAPTCHAs for Discord Servers.",
+  "description": "Fork of discord.js-captcha that adds ephemeral messages",
   "main": "src/index.js",
   "funding": {
     "type": "buymeacoffee",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/WillTDA/Discord.js-Captcha"
+    "url": "https://github.com/0xGingi/Discord.js-Captcha"
   },
   "keywords": [
     "discord.js",
