@@ -1,5 +1,5 @@
 {
-  "name": "discord.js-captcha-ephemeral",
+  "name": "@0xgingi/discord.js-captcha-ephemeral",
   "version": "3.0.8",
   "description": "Fork of discord.js-captcha that adds ephemeral messages",
   "main": "src/index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/0xGingi/Discord.js-Captcha"
+    "url": "git+https://github.com/0xGingi/Discord.js-Captcha.git"
   },
   "keywords": [
     "discord.js",
@@ -26,5 +26,9 @@
     "robot"
   ],
   "author": "WillTDA",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/0xGingi/Discord.js-Captcha/issues"
+  },
+  "homepage": "https://github.com/0xGingi/Discord.js-Captcha#readme"
 }
