@@ -24,6 +24,8 @@ const handleChannelType = require("./handleChannelType");
  * @prop {EmbedBuilder} [customPromptEmbed=undefined] (OPTIONAL): Custom Discord Embed to be Shown for the CAPTCHA Prompt.
  * @prop {EmbedBuilder} [customSuccessEmbed=undefined] (OPTIONAL): Custom Discord Embed to be Shown for the CAPTCHA Success Message.
  * @prop {EmbedBuilder} [customFailureEmbed=undefined] (OPTIONAL): Custom Discord Embed to be Shown for the CAPTCHA Failure Message.
+ * @prop {Boolean} [ephemeral=false] (OPTIONAL): Whether you want the CAPTCHA message to be ephemeral.
+
  * 
  */
 
@@ -139,6 +141,7 @@ class Captcha extends EventEmitter {
             console.log(`Discord.js Captcha Error: Option "customFailureEmbed" is not an instance of EmbedBuilder!\nNeed Help? Join our Discord Server at 'https://discord.gg/P2g24jp'`);
             process.exit(1)
         }
+        if (options.ephemeral === undefined) options.ephemeral = false;
 
         if (options.addRoleOnSuccess === undefined) options.addRoleOnSuccess = true;
         options.attempts = options.attempts || 1;
@@ -241,7 +244,8 @@ class Captcha extends EventEmitter {
                         embeds: [captchaPrompt],
                         files: [
                             { name: "captcha.png", attachment: captcha.image }
-                        ]
+                        ],
+                        ephemeral: this.options.ephemeral
                     })
                 } else {
                     return console.log(`Discord.js Captcha Error: User's Direct Messages are Locked!\nYou can attempt have the CAPTCHA sent to a Text Channel if it can't send to DMs by using the "channelID" Option in the Constructor.\nNeed Help? Join our Discord Server at 'https://discord.gg/P2g24jp'`);
